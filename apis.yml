@@ -1,19 +1,43 @@
 aid: prefix
-name: Prefix
-description: Prefix is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/prefix.png
+name: PreFix
+description: PreFix is a Techstars-backed residential home-maintenance service company operating
+  in Austin, Dallas, Houston, San Antonio, and Denver. For a flat monthly membership, homeowners
+  get a dedicated neighborhood Home Manager who handles general repairs, twice-yearly 30-point
+  preventive maintenance, HVAC, plumbing, carpentry, painting, appliance and garage-door work,
+  and vetted contractor management through a single email, call, or text. Customers manage their
+  homes through the HomeHub member portal. PreFix operates a consumer home-services business and
+  does not publish a public developer API, developer portal, or machine-readable API surface; this
+  profile is maintained in the API Evangelist network for company and demand-side intelligence.
 url: https://raw.githubusercontent.com/api-evangelist/prefix/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - techstars
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Home Services
+- Home Maintenance
+- Property Management
+- Consumer Services
+- Techstars
+- Real Estate
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/prefix-domain-security.yml
 - type: Website
   url: https://prefixinc.com/
+- type: Blog
+  url: https://www.prefixinc.com/blog
+- type: Pricing
+  url: https://prefixinc.com/
+- type: SignUp
+  url: https://www.prefixinc.com/#lead-form
+- type: Login
+  url: http://member.prefixinc.com
+- type: Support
+  url: https://www.prefixinc.com/contact-us
+- type: PrivacyPolicy
+  url: https://www.prefixinc.com/privacy-policy
+- type: TermsOfService
+  url: https://www.prefixinc.com/terms-conditions
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
